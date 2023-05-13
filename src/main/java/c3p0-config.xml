@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<!--使用默认的配置读取数据库连接池对象 -->
+	<default-config>
+		<!--加载驱动的Driver路径 -->
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<!--指定连接数据库 -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/students?erverTimezone=UTC&amp;useSSL=false</property>
+		<!--连接数据库的用户 -->
+		<property name="user">root</property>
+		<!--对应的密码 -->
+		<property name="password">327724</property>
+
+		<!-- 连接池参数 -->
+		<!--初始化申请的连接数量 -->
+		<property name="initialPoolSize">5</property>
+		<!--每次增长链接的数 -->
+		<property name="acquireIncrement">5</property>
+		<!--最大的连接数量 -->
+		<property name="maxPoolSize">10</property>
+		<!--最小连接数 -->
+		<property name="minPoolSize">5</property>
+		<!--超时时间 -->
+		<property name="checkoutTimeout">5000</property>
+		<!--每个连接对象可连接的最多的命令对象数 -->
+		<property name="maxStatementsPerConnection">2</property>
+		 <!--  连接池为数据源缓存的PreparedStatement的总数   -->  
+		<property name="maxStatements">0</property>
+	</default-config>
+</c3p0-config>

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.search .search-form-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.search .search-form-wrap #search-form{
+	position: relative;
+	display: block;
+}
+.search .search-form-wrap #search-form .key-box{
+	position: relative;
+}
+.search .search-form-wrap #search-form .key-box input.key,
+.search .search-form-wrap #search-form button.search-btn{
+	display: block;
+	outline: none;
+	border: none;
+}
+.search .search-form-wrap #search-form .key-box input.key{
+	padding: 10px 20px;
+	width: 400px;
+	border: 1px solid #0094FF;
+	border-radius: 5px;
+}
+.search .search-form-wrap #search-form button.search-btn{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: transparent;
+	color: #0094FF;
+	cursor: pointer;
+	font-size: 20px;
+}
+.search .search-form-wrap #search-form .key-box input.key + label.key-placeholder{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+	color: gray;
+	background: white;
+	transition: all .3s;
+}
+.search .search-form-wrap #search-form .key-box input.key:focus + label.key-placeholder,
+.search .search-form-wrap #search-form .key-box input.key:valid + label.key-placeholder{
+	top: 0%;
+	color: #0094FF;
+}
+span.keyword-span{
+	color: red;
+	font-weight: 700;
+}
+span.search-error{
+	margin: 30px auto;
+}
+.user-box{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 80%;
+	min-width: 1200px;
+}
+.user-box .search-result-title{
+	padding: 10px 0;
+}
+.user-box .item{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flext-start;
+	width: 100%;
+}
+.user-box .item span{
+	flex: 1;
+	padding: 10px 20px;
+	min-width: 50%;
+}
+.user-box .item span{
+	border: 1px dashed #0094FF;
+	border-top: none;
+	border-left: none;
+}
+.user-box .item span img{
+	max-height: 200px;
+}
+.user-box .item:nth-child(2) span{
+	border-top: 1px dashed #0094FF;
+}
+.user-box .item span:first-child{
+	border-left: 1px dashed #0094FF;
+}
+.user-item .item:nth-child(1) span{
+	border-top: 1px dashed #0094FF;
+}
+.user-item .item:nth-child(2) span{
+	border-top: none !important;
+}

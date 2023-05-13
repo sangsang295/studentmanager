@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.dele-btn{
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: #0094FF;
+	display: block;
+	margin: 20px auto;
+}
